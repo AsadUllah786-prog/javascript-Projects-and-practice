@@ -1,0 +1,102 @@
+:root {
+  --primary: #6c63ff;
+  --bg: #f4f6fb;
+  --card: #fff;
+  --text: #222;
+  --muted: #555;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.app {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.converter-box {
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--primary);
+  color: #fff;
+  transition: transform 0.1s ease, background 0.2s;
+}
+
+button:hover {
+  background: #574fd6;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button.secondary {
+  background: #ddd;
+  color: #222;
+}
+
+.result {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-align: center;
+  min-height: 24px;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}

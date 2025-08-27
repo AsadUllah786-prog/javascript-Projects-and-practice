@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="calculator-app">
+      <h1 style="margin-bottom: 30px;">🧮 Calculator</h1>
+     
+
+      <div class="calculator-box">
+        <input type="number" id="num1" placeholder="Enter first number" />
+        <input type="number" id="num2" placeholder="Enter second number" />
+
+        <select id="op">
+          <option value="+">➕ Add</option>
+          <option value="-">➖ Subtract</option>
+          <option value="*">✖ Multiply</option>
+          <option value="/">➗ Divide</option>
+          <option value="%">🔢 Modulus</option>
+          <option value="**">⬆ Exponent</option>
+        </select>
+
+        <div class="buttons">
+          <button id="calcBtn">Calculate</button>
+          <button id="clearBtn" class="secondary">Clear</button>
+        </div>
+
+        <div id="result" class="result">Result will appear here...</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

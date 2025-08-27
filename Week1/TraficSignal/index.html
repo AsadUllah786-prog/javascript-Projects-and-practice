@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Signal App</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🚦 Traffic Signal App</h1>
+    <p class="subtitle">Enter a signal color to see the action</p>
+
+    <div class="input-box">
+      <input type="text" id="signalInput" placeholder="Type red, orange, or green" />
+      <button id="checkBtn">Check</button>
+      <button id="clearBtn" class="secondary">Clear</button>
+    </div>
+
+    <div class="traffic-light">
+      <div class="light red"></div>
+      <div class="light orange"></div>
+      <div class="light green"></div>
+    </div>
+
+    <div id="result" class="result">Result will appear here...</div>
+
+   
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
