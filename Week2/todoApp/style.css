@@ -1,0 +1,134 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(pencil-checking-off-todo-list-3d-rendering-with-blue-background-copy-space_671359-10.avif);
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;  
+}
+
+/* Glassmorphism container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  width: 350px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  color: #fff;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  gap: 10px;
+
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  font-weight: bolder;
+}
+
+
+.input-section button {
+  padding: 10px 15px;
+  border: none;
+  background: #ff6b6b;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.input-section button:hover {
+  background: #ff4757;
+}
+
+/* Task list */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#taskList li {
+  background: rgba(21, 18, 19, 0.894);
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  color: #d1d1d1;
+}
+
+/* Action buttons */
+li button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #ff4757;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+li button:hover {
+  transform: scale(1.2);
+}
+
+/* Clear all button */
+.actions button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #096d20;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.actions button:hover {
+  background: #10ac84;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
